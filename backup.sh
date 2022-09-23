@@ -10,7 +10,7 @@ COLBG1="$(cat /etc/yokkovpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/
 ###########- END COLOR CODE -##########
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -28,7 +28,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -73,7 +73,7 @@ IP=$(curl -sS ipv4.icanhazip.com);
 date=$(date +"%Y-%m-%d")
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-NameUser=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+NameUser=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | grep $MYIP | awk '{print $2}')
 
 
 clear
@@ -98,7 +98,7 @@ cp /etc/shadow /root/backup/ &> /dev/null
 cp /etc/gshadow /root/backup/ &> /dev/null
 cp /etc/ppp/chap-secrets /root/backup/chap-secrets &> /dev/null
 cp /etc/ipsec.d/passwd /root/backup/passwd1 &> /dev/null
-cp -r /var/lib/yokkovpn-pro/ /root/backup/yokkovpn-pro &> /dev/null
+cp -r /var/lib/joyvpn-pro/ /root/backup/joyovpn-pro &> /dev/null
 cp -r /etc/xray /root/backup/xray &> /dev/null
 cp -r /home/vps/public_html /root/backup/public_html &> /dev/null
 cp -r /etc/cron.d /root/backup/cron.d &> /dev/null
@@ -109,7 +109,7 @@ zip -rP $InputPass $NameUser.zip backup > /dev/null 2>&1
 ##############++++++++++++++++++++++++#############
 LLatest=`date`
 Get_Data () {
-git clone https://github.com/YakkoXCode74/backupuseryokko.git /root/user-backup/ &> /dev/null
+git clone https://raw.githubusercontent.com/Mjoyvpn/WSS/main/root/user-backup/ &> /dev/null
 }
 
 Mkdir_Data () {
@@ -129,15 +129,15 @@ mv /root/$NameUser.zip /root/user-backup/$NameUser/
 Save_And_Exit () {
     DATE=$(date +'%d %B %Y')
     cd /root/user-backup
-    git config --global user.email "YakkoRasZ74@gmail.com" &> /dev/null
-    git config --global user.name "YakkoXCode74" &> /dev/null
+    git config --global user.email "kibocelcom@gmail.com" &> /dev/null
+    git config --global user.name "joysmark" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m backup &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/YakkoXCode74/backupuseryokko
-    git push -f https://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@github.com/YakkoXCode74/backupuseryokko.git &> /dev/null
+    git remote add origin https://raw.githubusercontent.com/Mjoyvpn
+    git push -f https://raw.githubusercontent.com/Mjoyvpn/WSS/main/ &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
@@ -152,7 +152,7 @@ sleep 1
 echo -e "$COLOR1│${NC}  [INFO] Processing updating server...... "
 Save_And_Exit
 fi
-link="https://raw.githubusercontent.com/YakkoXCode74/backupuseryokko/main/$NameUser/$NameUser.zip"
+link="https://raw.githubusercontent.com/Mjoyvpn/WSS/main/$NameUser/$NameUser.zip"
 sleep 1
 echo -e "$COLOR1│${NC}  [INFO] Backup done "
 sleep 1
@@ -175,7 +175,7 @@ rm -rf /root/user-backup &> /dev/null
 rm -f /root/$NameUser.zip &> /dev/null
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •                $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOY SMARK •                $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo
 read -n 1 -s -r -p "   Press any key to back on menu"
