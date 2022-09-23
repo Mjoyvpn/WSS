@@ -343,9 +343,6 @@ echo "   - Contact (Only Text)      : trikjoysmart" | tee -a log-install.txt | t
 echo "------------------------------------------------------------"
 echo ""
 echo "=============-[ CREATED BY JOYSMARK ]-==============="
-"
-echo -e ""
-echo ""
 echo "" | tee -a log-install.txt
 rm /root/cf.sh >/dev/null 2>&1
 rm /root/setup.sh >/dev/null 2>&1
@@ -359,4 +356,3 @@ if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
 else
 reboot
-fi
