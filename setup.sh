@@ -343,6 +343,7 @@ echo "   - Contact (Only Text)      : trikjoysmart" | tee -a log-install.txt | t
 echo "------------------------------------------------------------"
 echo ""
 echo "=============-[ CREATED BY JOYSMARK ]-==============="
+"
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
