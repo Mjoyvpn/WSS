@@ -265,7 +265,7 @@ if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo -e "$COLOR1│${NC} Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YJOYSMARK •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
