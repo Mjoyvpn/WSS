@@ -141,7 +141,7 @@ cd
 echo -e "$COLOR1│${NC}  [INFO] Please Input client"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK•            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -381,7 +381,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  [INFO] Please Input Correct Number"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -419,7 +419,7 @@ cd
 rm -rf /root/permission
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -444,7 +444,7 @@ echo -e "$COLOR1┌────────────────────�
 grep -E "^### " "/root/permission/ip" | cut -d ' ' -f 2 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 cd
 rm -rf /root/permission
@@ -466,7 +466,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  [INFO] Github API Reseted Successfully"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
