@@ -1,6 +1,6 @@
 [Unit]
-Description=SSH Over Websocket Python By Yokko Eddy
-Documentation=https://yokkoeddystore.studio
+Description=SSH Over Websocket Python By joysmark
+Documentation=https://joysmark
 After=network.target nss-lookup.target
 
 [Service]
