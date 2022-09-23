@@ -342,7 +342,7 @@ echo "   - Script Presented By      : JOYSMARK" | tee -a log-install.txt | tee -
 echo "   - Contact (Only Text)      : trikjoysmart" | tee -a log-install.txt | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
-echo "=============-[ CREATED BY JOYSMAK ]-==============="
+echo "=============-[ CREATED BY JOYSMARK ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
