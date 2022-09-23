@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 #  
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -78,7 +78,7 @@ echo "$localip $(hostname)" >> /etc/hosts
 fi
 mkdir -p /etc/xray
 
-SNPID=https://raw.githubusercontent.com/bracoli/multiws/main
+SNPID=https://raw.githubusercontent.com/Mjoyvpn/WSS/main
 echo $SNPID > /etc/xray/sumber
 SNP=$(cat /etc/xray/sumber)
 
@@ -176,10 +176,10 @@ exit 0
 fi
 sleep 3
 
-mkdir -p /etc/yokkovpn
-mkdir -p /etc/yokkovpn/theme
-mkdir -p /var/lib/yokkovpn-pro >/dev/null 2>&1
-echo "IP=" >> /var/lib/yokkovpn-pro/ipvps.conf
+mkdir -p /etc/joyovpn
+mkdir -p /etc/joyovpn/theme
+mkdir -p /var/lib/joyovpn-pro >/dev/null 2>&1
+echo "IP=" >> /var/lib/joyovpn-pro/ipvps.conf
 
 if [ -f "/etc/xray/domain" ]; then
 echo ""
@@ -207,40 +207,40 @@ echo "$pp" > /root/domain
 echo "$pp" > /root/scdomain
 echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/xray/scdomain
-echo "IP=$pp" > /var/lib/yokkovpn-pro/ipvps.conf
+echo "IP=$pp" > /var/lib/joyovpn-pro/ipvps.conf
 
 #THEME RED
-cat <<EOF>> /etc/yokkovpn/theme/red
+cat <<EOF>> /etc/joyovpn/theme/red
 BG : \E[40;1;41m
 TEXT : \033[0;31m
 EOF
 #THEME BLUE
-cat <<EOF>> /etc/yokkovpn/theme/blue
+cat <<EOF>> /etc/joyovpn/theme/blue
 BG : \E[40;1;44m
 TEXT : \033[0;34m
 EOF
 #THEME GREEN
-cat <<EOF>> /etc/yokkovpn/theme/green
+cat <<EOF>> /etc/joyovpn/theme/green
 BG : \E[40;1;42m
 TEXT : \033[0;32m
 EOF
 #THEME YELLOW
-cat <<EOF>> /etc/yokkovpn/theme/yellow
+cat <<EOF>> /etc/joyovpn/theme/yellow
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME MAGENTA
-cat <<EOF>> /etc/yokkovpn/theme/magenta
+cat <<EOF>> /etc/joyovpn/theme/magenta
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME CYAN
-cat <<EOF>> /etc/yokkovpn/theme/cyan
+cat <<EOF>> /etc/joyovpn/theme/cyan
 BG : \E[40;1;46m
 TEXT : \033[0;36m
 EOF
 #THEME CONFIG
-cat <<EOF>> /etc/yokkovpn/theme/color.conf
+cat <<EOF>> /etc/joyovpn/theme/color.conf
 blue
 EOF
     
@@ -288,7 +288,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/bracoli/permission/main/version  )
+serverV=$( curl -sS https://raw.githubusercontent.com/Mjoyvpn/WSS/main/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -339,8 +339,8 @@ echo "   - Backup & Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> About " | tee -a log-install.txt
-echo "   - Script Presented By      : YOKKO EDDY STORE" | tee -a log-install.txt" | tee -a log-install.txt
-echo "   - Contact (Only Text)      : wa.me/6281949400586" | tee -a log-install.txt" | tee -a log-install.txt
+echo "   - Script Presented By      : JOYSMARK" | tee -a log-install.txt" | tee -a log-install.txt
+echo "   - Contact (Only Text)      : t.me/joysmark" | tee -a log-install.txt" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
 echo "=============-[ YOKKO EDDY STORE ]-==============="
