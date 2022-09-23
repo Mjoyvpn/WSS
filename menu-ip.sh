@@ -41,7 +41,7 @@ if [ -z $USERNAME1 ]; then
 echo -e "$COLOR1│${NC}   [INFO] Please Input Your Github Username"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -53,7 +53,7 @@ if [ -z $API1 ]; then
 echo -e "$COLOR1│${NC}  [INFO] Please Input Your Github API"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "  Press any key to back on menu"
@@ -77,7 +77,7 @@ echo -e "$COLOR1│${NC}   • User  : $USERNAME1"
 echo -e "$COLOR1│${NC}   • API   : $API1"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -97,7 +97,7 @@ echo -e "$COLOR1│${NC}  • All U need Is Create a new repository "
 echo -e "$COLOR1│${NC}    & Nammed : permission "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -115,12 +115,12 @@ read -p "│  NEW IPVPS : " daftar
 echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  [INFO] Checking the IPVPS!"
 sleep 1
-REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/permission/main/ipmini | awk '{print $4}' | grep $daftar)
+REQIP=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | awk '{print $4}' | grep $daftar)
 if [[ $daftar = $REQIP ]]; then
 echo -e "$COLOR1│${NC}  [INFO] VPS IP Already Registered!!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -141,7 +141,7 @@ cd
 echo -e "$COLOR1│${NC}  [INFO] Please Input client"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -155,7 +155,7 @@ cd
 echo -e "$COLOR1│${NC}   [INFO] Please Input exp date"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -184,7 +184,7 @@ exp=$(date -d "$exp days" +"%Y-%m-%d")
 hariini=$(date -d "0 days" +"%Y-%m-%d")
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
-git clone https://github.com/${USERGIT}/permission.git &> /dev/null
+git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
 cd /root/permission/ &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
@@ -202,8 +202,8 @@ echo "### $client $exp $daftar $isadmin" >>/root/permission/ipmini
 git add .
 git commit -m register &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/${USERGIT}/permission.git &> /dev/null
-git push -f https://${APIGIT}@github.com/${USERGIT}/permission.git &> /dev/null
+git remote add origin https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
+git push -f https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
 sleep 1
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -221,7 +221,7 @@ cd
 rm -rf /root/permission
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -232,7 +232,7 @@ clear
 rm -rf /root/permission &> /dev/null
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
-git clone https://github.com/${USERGIT}/permission.git &> /dev/null
+git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
 cd /root/permission/ &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
@@ -245,7 +245,7 @@ echo -e "$COLOR1┌────────────────────�
 grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2-4 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -rp "   Please Input Number : " nombor
@@ -258,7 +258,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1│${NC}   [INFO] Please Input Correct Number"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -280,8 +280,8 @@ echo "${TEXTD}" >>/root/permission/delete_log  &> /dev/null
 git add . &> /dev/null
 git commit -m remove &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/${USERGIT}/permission.git &> /dev/null
-git push -f https://${APIGIT}@github.com/${USERGIT}/permission.git &> /dev/null
+git remote add origin https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
+git push -f https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip  &> /dev/null
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
@@ -296,7 +296,7 @@ cd
 rm -rf /root/permission
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -312,7 +312,7 @@ echo -e "$COLOR1┌────────────────────�
 rm -rf /root/permission
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
-git clone https://github.com/${USERGIT}/permission.git
+git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip
 cd /root/permission/
 rm -rf .git
 git init
@@ -329,7 +329,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}   [INFO] You have no existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -343,7 +343,7 @@ echo -e "$COLOR1┌────────────────────�
 grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2-4 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
@@ -362,7 +362,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}   [INFO] Please Input Correct Number"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -381,7 +381,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  [INFO] Please Input Correct Number"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -401,8 +401,8 @@ sed -i "s/### $name1 $exp $ivps1/### $name1 $exp4 $ivps1/g" /root/permission/ipm
 git add .
 git commit -m renew
 git branch -M main
-git remote add origin https://github.com/${USERGIT}/permission.git
-git push -f https://${APIGIT}@github.com/${USERGIT}/permission.git
+git remote add origin https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip
+git push -f https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
@@ -419,7 +419,7 @@ cd
 rm -rf /root/permission
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -444,7 +444,7 @@ echo -e "$COLOR1┌────────────────────�
 grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 cd
 rm -rf /root/permission
@@ -466,13 +466,13 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  [INFO] Github API Reseted Successfully"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip  
 }
-Isadmin=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | grep $MYIP | awk '{print $5}')
 if [ "$Isadmin" = "OFF" ]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -484,7 +484,7 @@ echo -e "$COLOR1│${NC} [INFO] Buy Premium Membership : "
 echo -e "$COLOR1│${NC} [INFO] PM : Yokko Eddy Store / wa.me/6281949400586/"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -514,7 +514,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}   • You Need To Set Github API First!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to Set API"
@@ -543,7 +543,7 @@ echo -e "   $COLOR1 [00]$NC • GO BACK"
 
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -p " Select menu :  "  opt
