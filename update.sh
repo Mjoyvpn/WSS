@@ -7,7 +7,7 @@ sleep 2
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-ss.sh" && chmod +x /usr/bin/menu-ss
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-vmess.sh" && chmod +x /usr/bin/menu-vmess
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/bracoli/multiws/main/menu-vless.sh" && chmod +x /usr/bin/menu-vless
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-vless.sh" && chmod +x /usr/bin/menu-vless
 wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-trojan.sh" && chmod +x /usr/bin/menu-trojan
 wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-bot.sh" && chmod +x /usr/bin/menu-bot
 wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/menu-ssh.sh" && chmod +x /usr/bin/menu-ssh
