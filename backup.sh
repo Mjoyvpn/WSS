@@ -44,7 +44,7 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS ttps://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | awk '{print $4}' | grep $MYIP)
+    MYIP=$(curl -sS htps://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
