@@ -193,7 +193,6 @@ exit 0
 else
 clear
 fi
-fi
 
 echo ""
 wget -q ${SNP}/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
@@ -301,7 +300,7 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 
 echo " "
-echo "====================-[ YOKKOVPN Premium ]-===================="
+echo "====================-[ SETUP BY JOYSMARK ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
@@ -343,7 +342,7 @@ echo "   - Script Presented By      : JOYSMARK" | tee -a log-install.txt" | tee 
 echo "   - Contact (Only Text)      : t.me/joysmark" | tee -a log-install.txt" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
-echo "=============-[ YOKKO EDDY STORE ]-==============="
+echo "=============-[ CREATED BY JOYSMAK ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
