@@ -56,19 +56,6 @@ NC='\e[0m'
 echo "Setting UP"
 echo "Progress..."
 sleep 3
-echo ""
-#green() { echo -e "\\033[32;1m${*}\\033[0m"; }
-#red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-#PERMISSION
-#if [ "$res" = "Permission Accepted..." ]; then
-#green "Permission Accepted.."
-#else
-#red "Permission Denied!"
-#exit 0
-#fi
-#sleep 3
-#echo -e "
-#"
 date
 echo ""
 sleep 1
