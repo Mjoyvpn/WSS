@@ -2,15 +2,15 @@
 
 cd
 
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/Mjoyvpn/WSS/main/websocket/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Mjoyvpn/WSS/main/websocket/ws-stunnel
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/Mjoyvpn/WSS/main/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Mjoyvpn/WSS/main/ws-stunnel
 
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/Mjoyvpn/WSS/main/websocket/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/Mjoyvpn/WSS/main/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/Mjoyvpn/WSS/main/websocket/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/Mjoyvpn/WSS/main/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
 
 systemctl daemon-reload
 systemctl enable ws-dropbear.service
