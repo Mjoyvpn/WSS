@@ -61,10 +61,10 @@ menu-ip
 fi
 
 sleep 2
-echo "$EMAIL1" > /etc/yokkovpn/github/email
-echo "$USERNAME1" > /etc/yokkovpn/github/username
-echo "$API1" > /etc/yokkovpn/github/api
-echo "ON" > /etc/yokkovpn/github/gitstat
+echo "$EMAIL1" > /etc/joyovpn/github/email
+echo "$USERNAME1" > /etc/joyovpn/github/username
+echo "$API1" > /etc/joyovpn/github/api
+echo "ON" > /etc/joyovpn/github/gitstat
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
@@ -110,7 +110,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 read -p "│  NEW IPVPS : " daftar
 echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  [INFO] Checking the IPVPS!"
@@ -174,8 +174,8 @@ echo -e "$COLOR1│${NC}"
 echo -ne "│  Input your choice : "; read list
 echo ""
 case "$list" in 
-   1) isadmin="$satu";break;;
-   2) isadmin="$dua";break;;
+   1) admin="$satu";break;;
+   2) admin="$dua";break;;
 esac
 done
 
@@ -185,10 +185,10 @@ hariini=$(date -d "0 days" +"%Y-%m-%d")
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
 git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
-cd /root/permission/ &> /dev/null
+cd /root/DAFTAR/ &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
-touch ipmini &> /dev/null
+touch ip &> /dev/null
 touch newuser &> /dev/null
 TEXT="
 Name        : $client 
@@ -197,8 +197,8 @@ Exp         : $exp
 IPVPS       : $daftar 
 Reg Date    : $hariini
 " 
-echo "${TEXT}" >>/root/permission/newuser 
-echo "### $client $exp $daftar $isadmin" >>/root/permission/ipmini 
+echo "${TEXT}" >>/root/DAFTAR/newuser 
+echo "### $client $exp $daftar $ joyovpn" >>/root/DAFTAR/ip
 git add .
 git commit -m register &> /dev/null
 git branch -M main &> /dev/null
@@ -218,7 +218,7 @@ echo -e "$COLOR1│${NC}  IP VPS        : $daftar"
 echo -e "$COLOR1│${NC}  Register Date : $hariini"
 echo -e "$COLOR1│${NC}  Expired Date  : $exp"
 cd
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -229,14 +229,14 @@ menu-ip
 }
 function delipvps(){
 clear
-rm -rf /root/permission &> /dev/null
+rm -rf /root/DAFTAR &> /dev/null
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
 git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
-cd /root/permission/ &> /dev/null
+cd /root/DAFTAR/ &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
-touch ipmini &> /dev/null
+touch ip &> /dev/null
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}                 • DELETE IPVPS •              ${NC} $COLOR1│$NC"
@@ -265,10 +265,10 @@ read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip
 fi
 
-name1=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2 | sed -n "$nombor"p) #name
-exp=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 3 | sed -n "$nombor"p) #exp
-ivps1=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 4 | sed -n "$nombor"p) #ip
-sed -i "s/### $name1 $exp $ivps1//g" /root/permission/ipmini &> /dev/null
+name1=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 2 | sed -n "$nombor"p) #name
+exp=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 3 | sed -n "$nombor"p) #exp
+ivps1=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 4 | sed -n "$nombor"p) #ip
+sed -i "s/### $name1 $exp $ivps1//g" /root/DAFTAR/ip &> /dev/null
 hariini2=$(date -d "0 days" +"%Y-%m-%d")
 TEXTD="
 Name     : $name1
@@ -313,7 +313,7 @@ rm -rf /root/permission
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
 git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip
-cd /root/permission/
+cd /root/DAFTAR/
 rm -rf .git
 git init
 touch ipmini
@@ -387,9 +387,9 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip
 fi
-name1=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p) #name
-exp=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p) #exp
-ivps1=$(grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p) #ip
+name1=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p) #name
+exp=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p) #exp
+ivps1=$(grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p) #ip
 
 now=$(date +%Y-%m-%d)
 d1=$(date -d "$exp" +%s)
@@ -397,7 +397,7 @@ d2=$(date -d "$now" +%s)
 exp2=$(((d1 - d2) / 86400))
 exp3=$(($exp2 + $masaaktif))
 exp4=$(date -d "$exp3 days" +"%Y-%m-%d")
-sed -i "s/### $name1 $exp $ivps1/### $name1 $exp4 $ivps1/g" /root/permission/ipmini
+sed -i "s/### $name1 $exp $ivps1/### $name1 $exp4 $ivps1/g" /root/DAFTAR/ip
 git add .
 git commit -m renew
 git branch -M main
@@ -428,14 +428,15 @@ menu-ip
 
 function useripvps(){
 clear
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 git config --global user.email "${EMAILGIT}"
 git config --global user.name "${USERGIT}"
-git clone https://github.com/${USERGIT}/permission.git
-cd /root/permission/
+git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
+sleep 
+cd /root/DAFTAR/
 rm -rf .git
 git init
-touch ipmini
+touch ip
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
@@ -447,18 +448,18 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 cd
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ip
 }
 function resetipvps(){
 clear
-rm -f /etc/yokkovpn/github/email
-rm -f /etc/yokkovpn/github/username
-rm -f /etc/yokkovpn/github/api
-rm -f /etc/yokkovpn/github/gitstat
-echo "OFF" > /etc/yokkovpn/github/gitstat
+rm -f /etc/joyovpn/github/email
+rm -f /etc/joyovpn/github/username
+rm -f /etc/joyovpn/github/api
+rm -f /etc/joyovpn/github/gitstat
+echo "OFF" > /etc/joyovpn/github/gitstat
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}              • RESET GITUB API •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -495,16 +496,16 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-GITREQ=/etc/yokkovpn/github/gitstat
+GITREQ=/etc/joyovpn/github/gitstat
 if [ -f "$GITREQ" ]; then
     cekk="ok"
 else 
-    mkdir /etc/yokkovpn/github
-    touch /etc/yokkovpn/github/gitstat
-    echo "OFF" > /etc/yokkovpn/github/gitstat
+    mkdir /etc/joyovpn/github
+    touch /etc/joyovpn/github/gitstat
+    echo "OFF" > /etc/joyovpn/github/gitstat
 fi
 
-stst1=$(cat /etc/yokkovpn/github/gitstat)
+stst1=$(cat /etc/joyovpn/github/gitstat)
 if [ "$stst1" = "OFF" ]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -520,7 +521,7 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to Set API"
 setapi
 fi
-stst=$(cat /etc/yokkovpn/github/gitstat)
+stst=$(cat /etc/joyovpn/github/gitstat)
 if [ "$stst" = "ON" ]; then
 APIOK="CEK API"
 rex="viewapi"
