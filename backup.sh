@@ -2,11 +2,11 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-colornow=$(cat /etc/yokkovpn/theme/color.conf)
+colornow=$(cat /etc/joyvpn/theme/color.conf)
 NC="\e[0m"
 RED="\033[0;31m" 
-COLOR1="$(cat /etc/yokkovpn/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-COLBG1="$(cat /etc/yokkovpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"                    
+COLOR1="$(cat /etc/joyovpn/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/joyovpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"                    
 ###########- END COLOR CODE -##########
 
 BURIQ () {
@@ -44,8 +44,7 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/bracoli/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    MYIP=$(curl -sS ittps://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -98,7 +97,7 @@ cp /etc/shadow /root/backup/ &> /dev/null
 cp /etc/gshadow /root/backup/ &> /dev/null
 cp /etc/ppp/chap-secrets /root/backup/chap-secrets &> /dev/null
 cp /etc/ipsec.d/passwd /root/backup/passwd1 &> /dev/null
-cp -r /var/lib/joyvpn-pro/ /root/backup/joyovpn-pro &> /dev/null
+cp -r /var/lib/joyovpn-pro/ /root/backup/joyovpn-pro &> /dev/null
 cp -r /etc/xray /root/backup/xray &> /dev/null
 cp -r /home/vps/public_html /root/backup/public_html &> /dev/null
 cp -r /etc/cron.d /root/backup/cron.d &> /dev/null
