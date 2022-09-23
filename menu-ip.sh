@@ -242,7 +242,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} ${COLBG1}                 • DELETE IPVPS •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2-4 | nl -s '. '
+grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 2-4 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -275,7 +275,7 @@ Name     : $name1
 IPVPS    : $ivps1  
 Status   : Deleted on  $hariini2
 " 
-echo "${TEXTD}" >>/root/permission/delete_log  &> /dev/null
+echo "${TEXTD}" >>/root/DAFTAR/delete_log  &> /dev/null
 
 git add . &> /dev/null
 git commit -m remove &> /dev/null
@@ -293,7 +293,7 @@ echo -e "$COLOR1│${NC}  Ip VPS       : $ivps1"
 echo -e "$COLOR1│${NC}  Expired Date : $exp"
 echo -e "$COLOR1│${NC}  Client Name  : $name1"
 cd
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -319,7 +319,7 @@ git init
 touch ipmini
 echo -e "   [ ${Lyellow}INFO${NC} ] Checking list.."
 
-NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/root/permission/ipmini")
+NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/root/DAFTAR/ip")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
   clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -340,7 +340,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2-4 | nl -s '. '
+grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 2-4 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -416,7 +416,7 @@ echo -e "$COLOR1│${NC}  Days Added    : $masaaktif Days"
 echo -e "$COLOR1│${NC}  Expired Date  : $exp4"
 echo -e "$COLOR1│${NC}  Client Name   : $name1"
 cd
-rm -rf /root/permission
+rm -rf /root/DAFTAR
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -442,7 +442,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} ${COLBG1}               • REGISTER IPVPS •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-grep -E "^### " "/root/permission/ipmini" | cut -d ' ' -f 2 | nl -s '. '
+grep -E "^### " "/root/DAFTAR/ip" | cut -d ' ' -f 2 | nl -s '. '
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
@@ -482,7 +482,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} [INFO] Only PRO Users Can Use This Panel"
 echo -e "$COLOR1│${NC} [INFO] Buy Premium Membership : "
-echo -e "$COLOR1│${NC} [INFO] PM : Yokko Eddy Store / wa.me/6281949400586/"
+echo -e "$COLOR1│${NC} [INFO] PM : t.me/joysmark"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
