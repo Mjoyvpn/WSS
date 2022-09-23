@@ -29,7 +29,7 @@ if [ -z $EMAIL1 ]; then
 echo -e "$COLOR1│${NC}   [INFO] Please Input Your Github Email Adress"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • YOKKOEDDYSTORE.STUDIO •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -232,7 +232,7 @@ clear
 rm -rf /root/permission &> /dev/null
 git config --global user.email "${EMAILGIT}" &> /dev/null
 git config --global user.name "${USERGIT}" &> /dev/null
-git clone https://github.com/${USERGIT}/permission.git &> /dev/null
+git clone https://raw.githubusercontent.com/Mjoyvpn/DAFTAR/main/main/ip &> /dev/null
 cd /root/permission/ &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
