@@ -239,9 +239,8 @@ else
 gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
-
 echo " "
-echo "====================-[ JOYSMARK ]-===================="
+echo "====================-[ JOYSMARK Premium ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
@@ -277,16 +276,20 @@ echo "   - VPS settings" | tee -a log-install.txt
 echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Backup & Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> About " | tee -a log-install.txt
 echo "   - Script Presented By      : JOYSMARK" | tee -a log-install.txt" | tee -a log-install.txt
+echo "   - Contact (Only Text)      : https://t.me/trikjoysmart" | tee -a log-install.txt" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
 echo "=============-[ JOYSMARK ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
+rm /root/cf.sh >/dev/null 2>&1
 rm /root/setup.sh >/dev/null 2>&1
-rm /root/ins-xray.sh >/dev/null 2>&1
-rm /root/insshws.sh >/dev/null 2>&1
+rm /root/insshws.sh 
+rm /root/update.sh
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
@@ -297,3 +300,9 @@ exit 0
 else
 reboot
 fi
+
+
+
+
+
+
