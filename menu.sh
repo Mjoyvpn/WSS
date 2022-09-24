@@ -163,7 +163,7 @@ echo -e "$COLOR1│${NC}           • MAXIS & DIGI & CELCOM  •               
 echo -e "$COLOR1│${NC}           • UMOBILE & UNIFE & YES  •                              $COLOR1│${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                                 $COLOR1│${NC}"
+echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                                $COLOR1│${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -ne " Select menu : "; read opt
