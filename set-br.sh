@@ -25,7 +25,6 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Downloading rclone config ... "
 wget -q -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/rclone.conf"
 git clone https://github.com/magnific0/wondershaper.git &> /dev/null
-cd wondershaper
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Installing wondershaper... "
 make install > /dev/null 2>&1
