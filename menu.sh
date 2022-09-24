@@ -158,17 +158,12 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
-echo -e "$COLOR1│$NC Version     :${COLOR1} $(cat /opt/.ver) Latest Version${NC}"
-echo -e "$COLOR1│$NC Client Name : $Name"
-if [ $exp \> 1000 ];
-then
-    echo -e "$COLOR1│$NC License     : Lifetime"
-else
-    datediff "$Exp" "$DATE"
-fi;
+echo -e "$COLOR1│${NC}          • THIS SCRIPT SUPPORT WSS•  $COLOR1│$NC"
+echo -e "$COLOR1│${NC}          • MAXIS & DIGI & CELCOM  •  $COLOR1│$NC"
+echo -e "$COLOR1│${NC}          • UMOBILE & UNIFE & YES  •  $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • JOYSMARK •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • JOYSMARK •        $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -ne " Select menu : "; read opt
