@@ -42,15 +42,15 @@ fi
 
 function add-host(){
 clear
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}               • ADD VPS HOST •                ${NC} $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC} ${COLBG1}               • ADD VPS HOST •                 ${NC} $COLOR1│$NC"
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
 read -rp "  New Host Name : " -e host
 echo ""
 if [ -z $host ]; then
 echo -e "  [INFO] Type Your Domain/sub domain"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu
@@ -59,7 +59,7 @@ echo "IP=$host" > /var/lib/joyovpn-pro/ipvps.conf
 echo ""
 echo "  [INFO] Dont forget to renew cert"
 echo ""
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "  Press any key to Renew Cret"
 crtxray
@@ -68,10 +68,10 @@ fi
 function updatews(){
 clear
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}            • UPDATE SCRIPT VPS •              ${NC} $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC} ${COLBG1}            • UPDATE SCRIPT VPS •               ${NC} $COLOR1│$NC"
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Check for Script updates"
 sleep 2
 wget -q -O /root/install_up.sh "https://raw.githubusercontent.com/Mjoyvpn/WSS/main/install_up.sh" && chmod +x /root/install_up.sh
@@ -83,17 +83,17 @@ rm /opt/.ver
 version_up=$( curl -sS https://raw.githubusercontent.com/Mjoyvpn/WSS/main/version)
 echo "$version_up" > /opt/.ver
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Successfully Up To Date!"
-echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • AUTO SCRIPT BY JOYSMARK •                       $COLOR1│${NC}"
-echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}" 
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}              • AUTO SCRIPT BY JOYSMARK •                        $COLOR1│${NC}"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu
 }
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}               • VPS PANEL MENU •                ${NC} $COLOR1 │$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}               • VPS PANEL MENU •               ${NC} $COLOR1 │$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
@@ -158,7 +158,7 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                                $COLOR1│${NC}"
+echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                               $COLOR1│${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -ne " Select menu : "; read opt
