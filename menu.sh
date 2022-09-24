@@ -83,17 +83,17 @@ rm /opt/.ver
 version_up=$( curl -sS https://raw.githubusercontent.com/Mjoyvpn/WSS/main/version)
 echo "$version_up" > /opt/.ver
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Successfully Up To Date!"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌────────────────────── BY ────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • JOYSMARK •                                       $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}              • AUTO SCRIPT BY JOYSMARK •                       $COLOR1│${NC}"
+echo -e "$COLOR1└────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu
 }
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}               • VPS PANEL MENU •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}               • VPS PANEL MENU •                ${NC} $COLOR1 │$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
@@ -141,9 +141,9 @@ echo -e "$COLOR1└────────────────────�
 myver="$(cat /opt/.ver)"
 
 if [[ $serverV > $myver ]]; then
-echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$RED┌───────────────────────────────────────────────────┐${NC}"
 echo -e "$RED│$NC ${COLOR1}[100]${NC} • UPDATE TO V$serverV" 
-echo -e "$RED└─────────────────────────────────────────────────┘${NC}"
+echo -e "$RED└───────────────────────────────────────────────────┘${NC}"
 up2u="updatews"
 else
 up2u="menu"
@@ -157,13 +157,13 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
-echo -e "$COLOR1│${NC}           • THIS SCRIPT SUPPORT WSS•                              $COLOR1│$NC"
-echo -e "$COLOR1│${NC}           • MAXIS & DIGI & CELCOM  •                              $COLOR1│$NC"
-echo -e "$COLOR1│${NC}           • UMOBILE & UNIFE & YES  •                              $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
-echo -e "$COLOR1┌────────────────────── BY ────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • JOYSMARK •                                    $COLOR1│$NC"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}           • THIS SCRIPT SUPPORT WSS•                              $COLOR1│${NC}"
+echo -e "$COLOR1│${NC}           • MAXIS & DIGI & CELCOM  •                              $COLOR1│${NC}"
+echo -e "$COLOR1│${NC}           • UMOBILE & UNIFE & YES  •                              $COLOR1│${NC}"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                                 $COLOR1│${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -ne " Select menu : "; read opt
