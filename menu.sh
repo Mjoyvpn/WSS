@@ -158,11 +158,6 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}           • THIS SCRIPT SUPPORT WSS•                              $COLOR1│${NC}"
-echo -e "$COLOR1│${NC}           • MAXIS & DIGI & CELCOM  •                              $COLOR1│${NC}"
-echo -e "$COLOR1│${NC}           • UMOBILE & UNIFE & YES  •                              $COLOR1│${NC}"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}               • VPS BY JOYSMARK •                                $COLOR1│${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
