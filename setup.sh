@@ -299,9 +299,9 @@ else
 gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
-
-echo " "
-echo "====================-[ YOKKOVPN Premium ]-===================="
+echo ""
+echo 
+echo "====================-[ JOYSMARK Premium ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
