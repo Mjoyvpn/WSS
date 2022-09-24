@@ -1,1 +1,377 @@
-echo 'IyEvYmluL2Jhc2gNCiMNCiMgQXV0byBpbnN0YWxsIGxhdGVzdCBrZXJuZWwgZm9yIFRDUCBCQlINCiMNCiMgU3lzdGVtIFJlcXVpcmVkOiAgQ2VudE9TIDYrLCBEZWJpYW43KywgVWJ1bnR1MTIrDQojDQojIENvcHlyaWdodCAoQykgMjAxNi0yMDE4IFRlZGR5c3VuIDxpQHRlZGR5c3VuLmNvbT4NCiMNCiMgVVJMOiBodHRwczovL3RlZGR5c3VuLmNvbS80ODkuaHRtbA0KIw0KZGF0ZUZyb21TZXJ2ZXI9JChjdXJsIC12IC0taW5zZWN1cmUgLS1zaWxlbnQgaHR0cHM6Ly9nb29nbGUuY29tLyAyPiYxIHwgZ3JlcCBEYXRlIHwgc2VkIC1lICdzLzwgRGF0ZTogLy8nKQ0KYmlqaT1gZGF0ZSArIiVZLSVtLSVkIiAtZCAiJGRhdGVGcm9tU2VydmVyImANCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMNCg0KDQpyZWQ9J1wwMzNbMDszMW0nDQpncmVlbj0nXDAzM1swOzMybScNCnllbGxvdz0nXDAzM1swOzMzbScNCnBsYWluPSdcMDMzWzBtJw0KDQpjdXJfZGlyPSQocHdkKQ0KDQpbWyAkRVVJRCAtbmUgMCBdXSAmJiBlY2hvIC1lICIke3JlZH1FcnJvcjoke3BsYWlufSBUaGlzIHNjcmlwdCBtdXN0IGJlIHJ1biBhcyByb290ISIgJiYgZXhpdCAxDQoNCltbIC1kICIvcHJvYy92eiIgXV0gJiYgZWNobyAtZSAiJHtyZWR9RXJyb3I6JHtwbGFpbn0gWW91ciBWUFMgaXMgYmFzZWQgb24gT3BlblZaLCB3aGljaCBpcyBub3Qgc3VwcG9ydGVkLiIgJiYgZXhpdCAxDQoNCmlmIFsgLWYgL2V0Yy9yZWRoYXQtcmVsZWFzZSBdOyB0aGVuDQogICAgcmVsZWFzZT0iY2VudG9zIg0KZWxpZiBjYXQgL2V0Yy9pc3N1ZSB8IGdyZXAgLUVxaSAiZGViaWFuIjsgdGhlbg0KICAgIHJlbGVhc2U9ImRlYmlhbiINCmVsaWYgY2F0IC9ldGMvaXNzdWUgfCBncmVwIC1FcWkgInVidW50dSI7IHRoZW4NCiAgICByZWxlYXNlPSJ1YnVudHUiDQplbGlmIGNhdCAvZXRjL2lzc3VlIHwgZ3JlcCAtRXFpICJjZW50b3N8cmVkIGhhdHxyZWRoYXQiOyB0aGVuDQogICAgcmVsZWFzZT0iY2VudG9zIg0KZWxpZiBjYXQgL3Byb2MvdmVyc2lvbiB8IGdyZXAgLUVxaSAiZGViaWFuIjsgdGhlbg0KICAgIHJlbGVhc2U9ImRlYmlhbiINCmVsaWYgY2F0IC9wcm9jL3ZlcnNpb24gfCBncmVwIC1FcWkgInVidW50dSI7IHRoZW4NCiAgICByZWxlYXNlPSJ1YnVudHUiDQplbGlmIGNhdCAvcHJvYy92ZXJzaW9uIHwgZ3JlcCAtRXFpICJjZW50b3N8cmVkIGhhdHxyZWRoYXQiOyB0aGVuDQogICAgcmVsZWFzZT0iY2VudG9zIg0KZWxzZQ0KICAgIHJlbGVhc2U9IiINCmZpDQoNCmlzX2RpZ2l0KCl7DQogICAgbG9jYWwgaW5wdXQ9JHsxfQ0KICAgIGlmIFtbICIkaW5wdXQiID1+IF5bMC05XSskIF1dOyB0aGVuDQogICAgICAgIHJldHVybiAwDQogICAgZWxzZQ0KICAgICAgICByZXR1cm4gMQ0KICAgIGZpDQp9DQoNCmlzXzY0Yml0KCl7DQogICAgaWYgWyAkKGdldGNvbmYgV09SRF9CSVQpID0gJzMyJyBdICYmIFsgJChnZXRjb25mIExPTkdfQklUKSA9ICc2NCcgXTsgdGhlbg0KICAgICAgICByZXR1cm4gMA0KICAgIGVsc2UNCiAgICAgICAgcmV0dXJuIDENCiAgICBmaQ0KfQ0KDQpnZXRfdmFsaWRfdmFsbmFtZSgpew0KICAgIGxvY2FsIHZhbD0kezF9DQogICAgbG9jYWwgbmV3X3ZhbD0kKGV2YWwgZWNobyAkdmFsIHwgc2VkICdzL1stLl0vXy9nJykNCiAgICBlY2hvICR7bmV3X3ZhbH0NCn0NCg0KZ2V0X2hpbnQoKXsNCiAgICBsb2NhbCB2YWw9JHsxfQ0KICAgIGxvY2FsIG5ld192YWw9JChnZXRfdmFsaWRfdmFsbmFtZSAkdmFsKQ0KICAgIGV2YWwgZWNobyAiXCRoaW50XyR7bmV3X3ZhbH0iDQp9DQoNCiNEaXNwbGF5IE1lbXUNCmRpc3BsYXlfbWVudSgpew0KICAgIGxvY2FsIHNvZnQ9JHsxfQ0KICAgIGxvY2FsIGRlZmF1bHQ9JHsyfQ0KICAgIGV2YWwgbG9jYWwgYXJyPShcJHske3NvZnR9X2FycltAXX0pDQogICAgbG9jYWwgZGVmYXVsdF9wcm9tcHQNCiAgICBpZiBbWyAiJGRlZmF1bHQiICE9ICIiIF1dOyB0aGVuDQogICAgICAgIGlmIFtbICIkZGVmYXVsdCIgPT0gImxhc3QiIF1dOyB0aGVuDQogICAgICAgICAgICBkZWZhdWx0PSR7I2FycltAXX0NCiAgICAgICAgZmkNCiAgICAgICAgZGVmYXVsdF9wcm9tcHQ9IihkZWZhdWx0ICR7YXJyWyRkZWZhdWx0LTFdfSkiDQogICAgZmkNCiAgICBsb2NhbCBwaWNrDQogICAgbG9jYWwgaGludA0KICAgIGxvY2FsIHZuYW1lDQogICAgbG9jYWwgcHJvbXB0PSJ3aGljaCAke3NvZnR9IHlvdSdkIHNlbGVjdCAke2RlZmF1bHRfcHJvbXB0fTogIg0KDQogICAgd2hpbGUgOg0KICAgIGRvDQogICAgICAgIGVjaG8gLWUgIlxuLS0tLS0tLS0tLS0tICR7c29mdH0gc2V0dGluZyAtLS0tLS0tLS0tLS1cbiINCiAgICAgICAgZm9yICgoaT0xO2k8PSR7I2FycltAXX07aSsrICkpOyBkbw0KICAgICAgICAgICAgdm5hbWU9IiQoZ2V0X3ZhbGlkX3ZhbG5hbWUgJHthcnJbJGktMV19KSINCiAgICAgICAgICAgIGhpbnQ9IiQoZ2V0X2hpbnQgJHZuYW1lKSINCiAgICAgICAgICAgIFtbICIkaGludCIgPT0gIiIgXV0gJiYgaGludD0iJHthcnJbJGktMV19Ig0KICAgICAgICAgICAgZWNobyAtZSAiJHtncmVlbn0ke2l9JHtwbGFpbn0pICRoaW50Ig0KICAgICAgICBkb25lDQogICAgICAgIGVjaG8NCiAgICAgICAgcmVhZCAtcCAiJHtwcm9tcHR9IiBwaWNrDQogICAgICAgIGlmIFtbICIkcGljayIgPT0gIiIgJiYgIiRkZWZhdWx0IiAhPSAiIiBdXTsgdGhlbg0KICAgICAgICAgICAgcGljaz0ke2RlZmF1bHR9DQogICAgICAgICAgICBicmVhaw0KICAgICAgICBmaQ0KDQogICAgICAgIGlmICEgaXNfZGlnaXQgIiRwaWNrIjsgdGhlbg0KICAgICAgICAgICAgcHJvbXB0PSJJbnB1dCBlcnJvciwgcGxlYXNlIGlucHV0IGEgbnVtYmVyIg0KICAgICAgICAgICAgY29udGludWUNCiAgICAgICAgZmkNCg0KICAgICAgICBpZiBbWyAiJHBpY2siIC1sdCAxIHx8ICIkcGljayIgLWd0ICR7I2FycltAXX0gXV07IHRoZW4NCiAgICAgICAgICAgIHByb21wdD0iSW5wdXQgZXJyb3IsIHBsZWFzZSBpbnB1dCBhIG51bWJlciBiZXR3ZWVuIDEgYW5kICR7I2FycltAXX06ICINCiAgICAgICAgICAgIGNvbnRpbnVlDQogICAgICAgIGZpDQoNCiAgICAgICAgYnJlYWsNCiAgICBkb25lDQoNCiAgICBldmFsICR7c29mdH09JHthcnJbJHBpY2stMV19DQogICAgdm5hbWU9IiQoZ2V0X3ZhbGlkX3ZhbG5hbWUgJHthcnJbJHBpY2stMV19KSINCiAgICBoaW50PSIkKGdldF9oaW50ICR2bmFtZSkiDQogICAgW1sgIiRoaW50IiA9PSAiIiBdXSAmJiBoaW50PSIke2FyclskcGljay0xXX0iDQogICAgZWNobyAtZSAiXG55b3VyIHNlbGVjdGlvbjogJGhpbnRcbiINCn0NCg0KdmVyc2lvbl9nZSgpew0KICAgIHRlc3QgIiQoZWNobyAiJEAiIHwgdHIgIiAiICJcbiIgfCBzb3J0IC1yViB8IGhlYWQgLW4gMSkiID09ICIkMSINCn0NCg0KZ2V0X2xhdGVzdF92ZXJzaW9uKCkgew0KICAgIGxhdGVzdF92ZXJzaW9uPSgkKHdnZXQgLXFPLSBodHRwczovL2tlcm5lbC51YnVudHUuY29tL35rZXJuZWwtcHBhL21haW5saW5lLyB8IGF3ayAtRidcInYnICcvdls0LTldLi97cHJpbnQgJDJ9JyB8IGN1dCAtZC8gLWYxIHwgZ3JlcCAtdiAtIHwgc29ydCAtVikpDQoNCiAgICBbICR7I2xhdGVzdF92ZXJzaW9uW0BdfSAtZXEgMCBdICYmIGVjaG8gLWUgIiR7cmVkfUVycm9yOiR7cGxhaW59IEdldCBsYXRlc3Qga2VybmVsIHZlcnNpb24gZmFpbGVkLiIgJiYgZXhpdCAxDQoNCiAgICBrZXJuZWxfYXJyPSgpDQogICAgZm9yIGkgaW4gJHtsYXRlc3RfdmVyc2lvbltAXX07IGRvDQogICAgICAgIGlmIHZlcnNpb25fZ2UgJGkgNC4xNDsgdGhlbg0KICAgICAgICAgICAga2VybmVsX2Fycis9KCRpKTsNCiAgICAgICAgZmkNCiAgICBkb25lDQoNCiAgICBkaXNwbGF5X21lbnUga2VybmVsIGxhc3QNCg0KICAgIGlmIFtbIGBnZXRjb25mIFdPUkRfQklUYCA9PSAiMzIiICYmIGBnZXRjb25mIExPTkdfQklUYCA9PSAiNjQiIF1dOyB0aGVuDQogICAgICAgIGRlYl9uYW1lPSQod2dldCAtcU8tIGh0dHBzOi8va2VybmVsLnVidW50dS5jb20vfmtlcm5lbC1wcGEvbWFpbmxpbmUvdiR7a2VybmVsfS8gfCBncmVwICJsaW51eC1pbWFnZSIgfCBncmVwICJnZW5lcmljIiB8IGF3ayAtRidcIj4nICcvYW1kNjQuZGViL3twcmludCAkMn0nIHwgY3V0IC1kJzwnIC1mMSB8IGhlYWQgLTEpDQogICAgICAgIGRlYl9rZXJuZWxfdXJsPSJodHRwczovL2tlcm5lbC51YnVudHUuY29tL35rZXJuZWwtcHBhL21haW5saW5lL3Yke2tlcm5lbH0vJHtkZWJfbmFtZX0iDQogICAgICAgIGRlYl9rZXJuZWxfbmFtZT0ibGludXgtaW1hZ2UtJHtrZXJuZWx9LWFtZDY0LmRlYiINCiAgICAgICAgbW9kdWxlc19kZWJfbmFtZT0kKHdnZXQgLXFPLSBodHRwczovL2tlcm5lbC51YnVudHUuY29tL35rZXJuZWwtcHBhL21haW5saW5lL3Yke2tlcm5lbH0vIHwgZ3JlcCAibGludXgtbW9kdWxlcyIgfCBncmVwICJnZW5lcmljIiB8IGF3ayAtRidcIj4nICcvYW1kNjQuZGViL3twcmludCAkMn0nIHwgY3V0IC1kJzwnIC1mMSB8IGhlYWQgLTEpDQogICAgICAgIGRlYl9rZXJuZWxfbW9kdWxlc191cmw9Imh0dHBzOi8va2VybmVsLnVidW50dS5jb20vfmtlcm5lbC1wcGEvbWFpbmxpbmUvdiR7a2VybmVsfS8ke21vZHVsZXNfZGViX25hbWV9Ig0KICAgICAgICBkZWJfa2VybmVsX21vZHVsZXNfbmFtZT0ibGludXgtbW9kdWxlcy0ke2tlcm5lbH0tYW1kNjQuZGViIg0KICAgIGVsc2UNCiAgICAgICAgZGViX25hbWU9JCh3Z2V0IC1xTy0gaHR0cHM6Ly9rZXJuZWwudWJ1bnR1LmNvbS9+a2VybmVsLXBwYS9tYWlubGluZS92JHtrZXJuZWx9LyB8IGdyZXAgImxpbnV4LWltYWdlIiB8IGdyZXAgImdlbmVyaWMiIHwgYXdrIC1GJ1wiPicgJy9pMzg2LmRlYi97cHJpbnQgJDJ9JyB8IGN1dCAtZCc8JyAtZjEgfCBoZWFkIC0xKQ0KICAgICAgICBkZWJfa2VybmVsX3VybD0iaHR0cHM6Ly9rZXJuZWwudWJ1bnR1LmNvbS9+a2VybmVsLXBwYS9tYWlubGluZS92JHtrZXJuZWx9LyR7ZGViX25hbWV9Ig0KICAgICAgICBkZWJfa2VybmVsX25hbWU9ImxpbnV4LWltYWdlLSR7a2VybmVsfS1pMzg2LmRlYiINCiAgICAgICAgbW9kdWxlc19kZWJfbmFtZT0kKHdnZXQgLXFPLSBodHRwczovL2tlcm5lbC51YnVudHUuY29tL35rZXJuZWwtcHBhL21haW5saW5lL3Yke2tlcm5lbH0vIHwgZ3JlcCAibGludXgtbW9kdWxlcyIgfCBncmVwICJnZW5lcmljIiB8IGF3ayAtRidcIj4nICcvaTM4Ni5kZWIve3ByaW50ICQyfScgfCBjdXQgLWQnPCcgLWYxIHwgaGVhZCAtMSkNCiAgICAgICAgZGViX2tlcm5lbF9tb2R1bGVzX3VybD0iaHR0cHM6Ly9rZXJuZWwudWJ1bnR1LmNvbS9+a2VybmVsLXBwYS9tYWlubGluZS92JHtrZXJuZWx9LyR7bW9kdWxlc19kZWJfbmFtZX0iDQogICAgICAgIGRlYl9rZXJuZWxfbW9kdWxlc19uYW1lPSJsaW51eC1tb2R1bGVzLSR7a2VybmVsfS1pMzg2LmRlYiINCiAgICBmaQ0KDQogICAgWyAteiAke2RlYl9uYW1lfSBdICYmIGVjaG8gLWUgIiR7cmVkfUVycm9yOiR7cGxhaW59IEdldHRpbmcgTGludXgga2VybmVsIGJpbmFyeSBwYWNrYWdlIG5hbWUgZmFpbGVkLCBtYXliZSBrZXJuZWwgYnVpbGQgZmFpbGVkLiBQbGVhc2UgY2hvb3NlIG90aGVyIG9uZSBhbmQgdHJ5IGFnYWluLiIgJiYgZXhpdCAxDQp9DQoNCmdldF9vcHN5KCkgew0KICAgIFsgLWYgL2V0Yy9yZWRoYXQtcmVsZWFzZSBdICYmIGF3ayAne3ByaW50ICgkMSwkM34vXlswLTldLz8kMzokNCl9JyAvZXRjL3JlZGhhdC1yZWxlYXNlICYmIHJldHVybg0KICAgIFsgLWYgL2V0Yy9vcy1yZWxlYXNlIF0gJiYgYXdrIC1GJ1s9ICJdJyAnL1BSRVRUWV9OQU1FL3twcmludCAkMywkNCwkNX0nIC9ldGMvb3MtcmVsZWFzZSAmJiByZXR1cm4NCiAgICBbIC1mIC9ldGMvbHNiLXJlbGVhc2UgXSAmJiBhd2sgLUYnWz0iXSsnICcvREVTQ1JJUFRJT04ve3ByaW50ICQyfScgL2V0Yy9sc2ItcmVsZWFzZSAmJiByZXR1cm4NCn0NCg0Kb3BzeT0kKCBnZXRfb3BzeSApDQphcmNoPSQoIHVuYW1lIC1tICkNCmxiaXQ9JCggZ2V0Y29uZiBMT05HX0JJVCApDQprZXJuPSQoIHVuYW1lIC1yICkNCg0KZ2V0X2NoYXIoKSB7DQogICAgU0FWRURTVFRZPWBzdHR5IC1nYA0KICAgIHN0dHkgLWVjaG8NCiAgICBzdHR5IGNicmVhaw0KICAgIyBkZCBpZj0vZGV2L3R0eSBicz0xIGNvdW50PTEgMj4gL2Rldi9udWxsDQogICAgc3R0eSAtcmF3DQogICAgc3R0eSBlY2hvDQogICAgc3R0eSAkU0FWRURTVFRZDQp9DQoNCmdldHZlcnNpb24oKSB7DQogICAgaWYgW1sgLXMgL2V0Yy9yZWRoYXQtcmVsZWFzZSBdXTsgdGhlbg0KICAgICAgICBncmVwIC1vRSAgIlswLTkuXSsiIC9ldGMvcmVkaGF0LXJlbGVhc2UNCiAgICBlbHNlDQogICAgICAgIGdyZXAgLW9FICAiWzAtOS5dKyIgL2V0Yy9pc3N1ZQ0KICAgIGZpDQp9DQoNCmNlbnRvc3ZlcnNpb24oKSB7DQogICAgaWYgWyB4IiR7cmVsZWFzZX0iID09IHgiY2VudG9zIiBdOyB0aGVuDQogICAgICAgIGxvY2FsIGNvZGU9JDENCiAgICAgICAgbG9jYWwgdmVyc2lvbj0iJChnZXR2ZXJzaW9uKSINCiAgICAgICAgbG9jYWwgbWFpbl92ZXI9JHt2ZXJzaW9uJSUuKn0NCiAgICAgICAgaWYgWyAiJG1haW5fdmVyIiA9PSAiJGNvZGUiIF07IHRoZW4NCiAgICAgICAgICAgIHJldHVybiAwDQogICAgICAgIGVsc2UNCiAgICAgICAgICAgIHJldHVybiAxDQogICAgICAgIGZpDQogICAgZWxzZQ0KICAgICAgICByZXR1cm4gMQ0KICAgIGZpDQp9DQoNCmNoZWNrX2Jicl9zdGF0dXMoKSB7DQogICAgbG9jYWwgcGFyYW09JChzeXNjdGwgbmV0LmlwdjQudGNwX2Nvbmdlc3Rpb25fY29udHJvbCB8IGF3ayAne3ByaW50ICQzfScpDQogICAgaWYgW1sgeCIke3BhcmFtfSIgPT0geCJiYnIiIF1dOyB0aGVuDQogICAgICAgIHJldHVybiAwDQogICAgZWxzZQ0KICAgICAgICByZXR1cm4gMQ0KICAgIGZpDQp9DQoNCmNoZWNrX2tlcm5lbF92ZXJzaW9uKCkgew0KICAgIGxvY2FsIGtlcm5lbF92ZXJzaW9uPSQodW5hbWUgLXIgfCBjdXQgLWQtIC1mMSkNCiAgICBpZiB2ZXJzaW9uX2dlICR7a2VybmVsX3ZlcnNpb259IDQuOTsgdGhlbg0KICAgICAgICByZXR1cm4gMA0KICAgIGVsc2UNCiAgICAgICAgcmV0dXJuIDENCiAgICBmaQ0KfQ0KDQppbnN0YWxsX2VscmVwbygpIHsNCg0KICAgIGlmIGNlbnRvc3ZlcnNpb24gNTsgdGhlbg0KICAgICAgICBlY2hvIC1lICIke3JlZH1FcnJvcjoke3BsYWlufSBub3Qgc3VwcG9ydGVkIENlbnRPUyA1LiINCiAgICAgICAgZXhpdCAxDQogICAgZmkNCg0KICAgIHJwbSAtLWltcG9ydCBodHRwczovL3d3dy5lbHJlcG8ub3JnL1JQTS1HUEctS0VZLWVscmVwby5vcmcNCg0KICAgIGlmIGNlbnRvc3ZlcnNpb24gNjsgdGhlbg0KICAgICAgICBycG0gLVV2aCBodHRwczovL3d3dy5lbHJlcG8ub3JnL2VscmVwby1yZWxlYXNlLTYtOC5lbDYuZWxyZXBvLm5vYXJjaC5ycG0NCiAgICBlbGlmIGNlbnRvc3ZlcnNpb24gNzsgdGhlbg0KICAgICAgICBycG0gLVV2aCBodHRwczovL3d3dy5lbHJlcG8ub3JnL2VscmVwby1yZWxlYXNlLTcuMC0zLmVsNy5lbHJlcG8ubm9hcmNoLnJwbQ0KICAgIGZpDQoNCiAgICBpZiBbICEgLWYgL2V0Yy95dW0ucmVwb3MuZC9lbHJlcG8ucmVwbyBdOyB0aGVuDQogICAgICAgIGVjaG8gLWUgIiR7cmVkfUVycm9yOiR7cGxhaW59IEluc3RhbGwgZWxyZXBvIGZhaWxlZCwgcGxlYXNlIGNoZWNrIGl0LiINCiAgICAgICAgZXhpdCAxDQogICAgZmkNCn0NCg0Kc3lzY3RsX2NvbmZpZygpIHsNCiAgICBzZWQgLWkgJy9uZXQuY29yZS5kZWZhdWx0X3FkaXNjL2QnIC9ldGMvc3lzY3RsLmNvbmYNCiAgICBzZWQgLWkgJy9uZXQuaXB2NC50Y3BfY29uZ2VzdGlvbl9jb250cm9sL2QnIC9ldGMvc3lzY3RsLmNvbmYNCiAgICBlY2hvICJuZXQuY29yZS5kZWZhdWx0X3FkaXNjID0gZnEiID4+IC9ldGMvc3lzY3RsLmNvbmYNCiAgICBlY2hvICJuZXQuaXB2NC50Y3BfY29uZ2VzdGlvbl9jb250cm9sID0gYmJyIiA+PiAvZXRjL3N5c2N0bC5jb25mDQogICAgc3lzY3RsIC1wID4vZGV2L251bGwgMj4mMQ0KfQ0KDQppbnN0YWxsX2NvbmZpZygpIHsNCiAgICBpZiBbWyB4IiR7cmVsZWFzZX0iID09IHgiY2VudG9zIiBdXTsgdGhlbg0KICAgICAgICBpZiBjZW50b3N2ZXJzaW9uIDY7IHRoZW4NCiAgICAgICAgICAgIGlmIFsgISAtZiAiL2Jvb3QvZ3J1Yi9ncnViLmNvbmYiIF07IHRoZW4NCiAgICAgICAgICAgICAgICBlY2hvIC1lICIke3JlZH1FcnJvcjoke3BsYWlufSAvYm9vdC9ncnViL2dydWIuY29uZiBub3QgZm91bmQsIHBsZWFzZSBjaGVjayBpdC4iDQogICAgICAgICAgICAgICAgZXhpdCAxDQogICAgICAgICAgICBmaQ0KICAgICAgICAgICAgc2VkIC1pICdzL15kZWZhdWx0PS4qL2RlZmF1bHQ9MC9nJyAvYm9vdC9ncnViL2dydWIuY29uZg0KICAgICAgICBlbGlmIGNlbnRvc3ZlcnNpb24gNzsgdGhlbg0KICAgICAgICAgICAgaWYgWyAhIC1mICIvYm9vdC9ncnViMi9ncnViLmNmZyIgXTsgdGhlbg0KICAgICAgICAgICAgICAgIGVjaG8gLWUgIiR7cmVkfUVycm9yOiR7cGxhaW59IC9ib290L2dydWIyL2dydWIuY2ZnIG5vdCBmb3VuZCwgcGxlYXNlIGNoZWNrIGl0LiINCiAgICAgICAgICAgICAgICBleGl0IDENCiAgICAgICAgICAgIGZpDQogICAgICAgICAgICBncnViMi1zZXQtZGVmYXVsdCAwDQogICAgICAgIGZpDQogICAgZWxpZiBbWyB4IiR7cmVsZWFzZX0iID09IHgiZGViaWFuIiB8fCB4IiR7cmVsZWFzZX0iID09IHgidWJ1bnR1IiBdXTsgdGhlbg0KICAgICAgICAvdXNyL3NiaW4vdXBkYXRlLWdydWINCiAgICBmaQ0KfQ0KDQpyZWJvb3Rfb3MoKSB7DQogICAgZWNobw0KICAgIGVjaG8gLWUgIiR7Z3JlZW59SW5mbzoke3BsYWlufSBUaGUgc3lzdGVtIG5lZWRzIHRvIHJlYm9vdC4iDQogICAgcmVhZCAtcCAiRG8geW91IHdhbnQgdG8gcmVzdGFydCBzeXN0ZW0/IFt5L25dIiBpc19yZWJvb3QNCiAgICBpZiBbWyAke2lzX3JlYm9vdH0gPT0gInkiIHx8ICR7aXNfcmVib290fSA9PSAiWSIgXV07IHRoZW4NCiAgICAgICAgcmVib290DQogICAgZWxzZQ0KICAgICAgICBlY2hvIC1lICIke3JlZH1JbmZvOiR7cGxhaW59IFJlYm9vdCBoYXMgYmVlbiBjYW5jZWxlZC4uLiINCiAgICAgICAgZXhpdCAwDQogICAgZmkNCn0NCg0KaW5zdGFsbF9iYnIoKSB7DQogICAgY2hlY2tfYmJyX3N0YXR1cw0KICAgIGlmIFsgJD8gLWVxIDAgXTsgdGhlbg0KICAgICAgICBlY2hvDQogICAgICAgIGVjaG8gLWUgIiR7Z3JlZW59SW5mbzoke3BsYWlufSBUQ1AgQkJSIGhhcyBhbHJlYWR5IGJlZW4gaW5zdGFsbGVkLiBub3RoaW5nIHRvIGRvLi4uIg0KICAgICAgICBleGl0IDANCiAgICBmaQ0KICAgIGNoZWNrX2tlcm5lbF92ZXJzaW9uDQogICAgaWYgWyAkPyAtZXEgMCBdOyB0aGVuDQogICAgICAgIGVjaG8NCiAgICAgICAgZWNobyAtZSAiJHtncmVlbn1JbmZvOiR7cGxhaW59IFlvdXIga2VybmVsIHZlcnNpb24gaXMgZ3JlYXRlciB0aGFuIDQuOSwgZGlyZWN0bHkgc2V0dGluZyBUQ1AgQkJSLi4uIg0KICAgICAgICBzeXNjdGxfY29uZmlnDQogICAgICAgIGVjaG8gLWUgIiR7Z3JlZW59SW5mbzoke3BsYWlufSBTZXR0aW5nIFRDUCBCQlIgY29tcGxldGVkLi4uIg0KICAgICAgICBleGl0IDANCiAgICBmaQ0KDQogICAgaWYgW1sgeCIke3JlbGVhc2V9IiA9PSB4ImNlbnRvcyIgXV07IHRoZW4NCiAgICAgICAgaW5zdGFsbF9lbHJlcG8NCiAgICAgICAgWyAhICIkKGNvbW1hbmQgLXYgeXVtLWNvbmZpZy1tYW5hZ2VyKSIgXSAmJiB5dW0gaW5zdGFsbCAteSB5dW0tdXRpbHMgPiAvZGV2L251bGwgMj4mMQ0KICAgICAgICBbIHgiJCh5dW0tY29uZmlnLW1hbmFnZXIgZWxyZXBvLWtlcm5lbCB8IGdyZXAgLXcgZW5hYmxlZCB8IGF3ayAne3ByaW50ICQzfScpIiAhPSB4IlRydWUiIF0gJiYgeXVtLWNvbmZpZy1tYW5hZ2VyIC0tZW5hYmxlIGVscmVwby1rZXJuZWwgPiAvZGV2L251bGwgMj4mMQ0KICAgICAgICBpZiBjZW50b3N2ZXJzaW9uIDY7IHRoZW4NCiAgICAgICAgICAgIGlmIGlzXzY0Yml0OyB0aGVuDQogICAgICAgICAgICAgICAgcnBtX2tlcm5lbF9uYW1lPSJrZXJuZWwtbWwtNC4xOC4yMC0xLmVsNi5lbHJlcG8ueDg2XzY0LnJwbSINCiAgICAgICAgICAgICAgICBycG1fa2VybmVsX2RldmVsX25hbWU9Imtlcm5lbC1tbC1kZXZlbC00LjE4LjIwLTEuZWw2LmVscmVwby54ODZfNjQucnBtIg0KICAgICAgICAgICAgICAgIHJwbV9rZXJuZWxfdXJsXzE9Imh0dHA6Ly9yZXBvcy5sYXgucXVhZHJhbmV0LmNvbS9lbHJlcG8vYXJjaGl2ZS9rZXJuZWwvZWw2L3g4Nl82NC9SUE1TLyINCiAgICAgICAgICAgIGVsc2UNCiAgICAgICAgICAgICAgICBycG1fa2VybmVsX25hbWU9Imtlcm5lbC1tbC00LjE4LjIwLTEuZWw2LmVscmVwby5pNjg2LnJwbSINCiAgICAgICAgICAgICAgICBycG1fa2VybmVsX2RldmVsX25hbWU9Imtlcm5lbC1tbC1kZXZlbC00LjE4LjIwLTEuZWw2LmVscmVwby5pNjg2LnJwbSINCiAgICAgICAgICAgICAgICBycG1fa2VybmVsX3VybF8xPSJodHRwOi8vcmVwb3MubGF4LnF1YWRyYW5ldC5jb20vZWxyZXBvL2FyY2hpdmUva2VybmVsL2VsNi9pMzg2L1JQTVMvIg0KICAgICAgICAgICAgZmkNCiAgICAgICAgICAgIHJwbV9rZXJuZWxfdXJsXzI9Imh0dHBzOi8vZGwubGFtcC5zaC9maWxlcy8iDQogICAgICAgICAgICB3Z2V0IC1jIC10MyAtVDYwIC1PICR7cnBtX2tlcm5lbF9uYW1lfSAke3JwbV9rZXJuZWxfdXJsXzF9JHtycG1fa2VybmVsX25hbWV9DQogICAgICAgICAgICBpZiBbICQ/IC1uZSAwIF07IHRoZW4NCiAgICAgICAgICAgICAgICBybSAtcmYgJHtycG1fa2VybmVsX25hbWV9DQogICAgICAgICAgICAgICAgd2dldCAtYyAtdDMgLVQ2MCAtTyAke3JwbV9rZXJuZWxfbmFtZX0gJHtycG1fa2VybmVsX3VybF8yfSR7cnBtX2tlcm5lbF9uYW1lfQ0KICAgICAgICAgICAgZmkNCiAgICAgICAgICAgIHdnZXQgLWMgLXQzIC1UNjAgLU8gJHtycG1fa2VybmVsX2RldmVsX25hbWV9ICR7cnBtX2tlcm5lbF91cmxfMX0ke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0NCiAgICAgICAgICAgIGlmIFsgJD8gLW5lIDAgXTsgdGhlbg0KICAgICAgICAgICAgICAgIHJtIC1yZiAke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0NCiAgICAgICAgICAgICAgICB3Z2V0IC1jIC10MyAtVDYwIC1PICR7cnBtX2tlcm5lbF9kZXZlbF9uYW1lfSAke3JwbV9rZXJuZWxfdXJsXzJ9JHtycG1fa2VybmVsX2RldmVsX25hbWV9DQogICAgICAgICAgICBmaQ0KICAgICAgICAgICAgaWYgWyAtZiAiJHtycG1fa2VybmVsX25hbWV9IiBdOyB0aGVuDQogICAgICAgICAgICAgICAgcnBtIC1pdmggJHtycG1fa2VybmVsX25hbWV9DQogICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgZWNobyAtZSAiJHtyZWR9RXJyb3I6JHtwbGFpbn0gRG93bmxvYWQgJHtycG1fa2VybmVsX25hbWV9IGZhaWxlZCwgcGxlYXNlIGNoZWNrIGl0LiINCiAgICAgICAgICAgICAgICBleGl0IDENCiAgICAgICAgICAgIGZpDQogICAgICAgICAgICBpZiBbIC1mICIke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0iIF07IHRoZW4NCiAgICAgICAgICAgICAgICBycG0gLWl2aCAke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0NCiAgICAgICAgICAgIGVsc2UNCiAgICAgICAgICAgICAgICBlY2hvIC1lICIke3JlZH1FcnJvcjoke3BsYWlufSBEb3dubG9hZCAke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0gZmFpbGVkLCBwbGVhc2UgY2hlY2sgaXQuIg0KICAgICAgICAgICAgICAgIGV4aXQgMQ0KICAgICAgICAgICAgZmkNCiAgICAgICAgICAgIHJtIC1mICR7cnBtX2tlcm5lbF9uYW1lfSAke3JwbV9rZXJuZWxfZGV2ZWxfbmFtZX0NCiAgICAgICAgZWxpZiBjZW50b3N2ZXJzaW9uIDc7IHRoZW4NCiAgICAgICAgICAgIHl1bSAteSBpbnN0YWxsIGtlcm5lbC1tbCBrZXJuZWwtbWwtZGV2ZWwNCiAgICAgICAgICAgIGlmIFsgJD8gLW5lIDAgXTsgdGhlbg0KICAgICAgICAgICAgICAgIGVjaG8gLWUgIiR7cmVkfUVycm9yOiR7cGxhaW59IEluc3RhbGwgbGF0ZXN0IGtlcm5lbCBmYWlsZWQsIHBsZWFzZSBjaGVjayBpdC4iDQogICAgICAgICAgICAgICAgZXhpdCAxDQogICAgICAgICAgICBmaQ0KICAgICAgICBmaQ0KICAgIGVsaWYgW1sgeCIke3JlbGVhc2V9IiA9PSB4ImRlYmlhbiIgfHwgeCIke3JlbGVhc2V9IiA9PSB4InVidW50dSIgXV07IHRoZW4NCiAgICAgICAgW1sgISAtZSAiL3Vzci9iaW4vd2dldCIgXV0gJiYgYXB0LWdldCAteSB1cGRhdGUgJiYgYXB0LWdldCAteSBpbnN0YWxsIHdnZXQNCiAgICAgICAgZWNobyAtZSAiJHtncmVlbn1JbmZvOiR7cGxhaW59IEdldHRpbmcgbGF0ZXN0IGtlcm5lbCB2ZXJzaW9uLi4uIg0KICAgICAgICBnZXRfbGF0ZXN0X3ZlcnNpb24NCiAgICAgICAgaWYgWyAtbiAke21vZHVsZXNfZGViX25hbWV9IF07IHRoZW4NCiAgICAgICAgICAgIHdnZXQgLWMgLXQzIC1UNjAgLU8gJHtkZWJfa2VybmVsX21vZHVsZXNfbmFtZX0gJHtkZWJfa2VybmVsX21vZHVsZXNfdXJsfQ0KICAgICAgICAgICAgaWYgWyAkPyAtbmUgMCBdOyB0aGVuDQogICAgICAgICAgICAgICAgZWNobyAtZSAiJHtyZWR9RXJyb3I6JHtwbGFpbn0gRG93bmxvYWQgJHtkZWJfa2VybmVsX21vZHVsZXNfbmFtZX0gZmFpbGVkLCBwbGVhc2UgY2hlY2sgaXQuIg0KICAgICAgICAgICAgICAgIGV4aXQgMQ0KICAgICAgICAgICAgZmkNCiAgICAgICAgZmkNCiAgICAgICAgd2dldCAtYyAtdDMgLVQ2MCAtTyAke2RlYl9rZXJuZWxfbmFtZX0gJHtkZWJfa2VybmVsX3VybH0NCiAgICAgICAgaWYgWyAkPyAtbmUgMCBdOyB0aGVuDQogICAgICAgICAgICBlY2hvIC1lICIke3JlZH1FcnJvcjoke3BsYWlufSBEb3dubG9hZCAke2RlYl9rZXJuZWxfbmFtZX0gZmFpbGVkLCBwbGVhc2UgY2hlY2sgaXQuIg0KICAgICAgICAgICAgZXhpdCAxDQogICAgICAgIGZpDQogICAgICAgIFsgLWYgJHtkZWJfa2VybmVsX21vZHVsZXNfbmFtZX0gXSAmJiBkcGtnIC1pICR7ZGViX2tlcm5lbF9tb2R1bGVzX25hbWV9DQogICAgICAgIGRwa2cgLWkgJHtkZWJfa2VybmVsX25hbWV9DQogICAgICAgIHJtIC1mICR7ZGViX2tlcm5lbF9uYW1lfSAke2RlYl9rZXJuZWxfbW9kdWxlc19uYW1lfQ0KICAgIGVsc2UNCiAgICAgICAgZWNobyAtZSAiJHtyZWR9RXJyb3I6JHtwbGFpbn0gT1MgaXMgbm90IGJlIHN1cHBvcnRlZCwgcGxlYXNlIGNoYW5nZSB0byBDZW50T1MvRGViaWFuL1VidW50dSBhbmQgdHJ5IGFnYWluLiINCiAgICAgICAgZXhpdCAxDQogICAgZmkNCg0KICAgIGluc3RhbGxfY29uZmlnDQogICAgc3lzY3RsX2NvbmZpZw0KICAgIHJlYm9vdF9vcw0KfQ0KDQppbnN0YWxsX2JiciAyPiYxIHwgdGVlICR7Y3VyX2Rpcn0vaW5zdGFsbF9iYnIubG9nDQo=' | base64 -d | sh
+#!/bin/bash
+#
+# Auto install latest kernel for TCP BBR
+#
+# System Required:  CentOS 6+, Debian7+, Ubuntu12+
+#
+# Copyright (C) 2016-2018 Teddysun <i@teddysun.com>
+#
+# URL: https://teddysun.com/489.html
+#
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#########################
+
+
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+plain='\033[0m'
+
+cur_dir=$(pwd)
+
+[[ $EUID -ne 0 ]] && echo -e "${red}Error:${plain} This script must be run as root!" && exit 1
+
+[[ -d "/proc/vz" ]] && echo -e "${red}Error:${plain} Your VPS is based on OpenVZ, which is not supported." && exit 1
+
+if [ -f /etc/redhat-release ]; then
+    release="centos"
+elif cat /etc/issue | grep -Eqi "debian"; then
+    release="debian"
+elif cat /etc/issue | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+elif cat /proc/version | grep -Eqi "debian"; then
+    release="debian"
+elif cat /proc/version | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+else
+    release=""
+fi
+
+is_digit(){
+    local input=${1}
+    if [[ "$input" =~ ^[0-9]+$ ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+is_64bit(){
+    if [ $(getconf WORD_BIT) = '32' ] && [ $(getconf LONG_BIT) = '64' ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+get_valid_valname(){
+    local val=${1}
+    local new_val=$(eval echo $val | sed 's/[-.]/_/g')
+    echo ${new_val}
+}
+
+get_hint(){
+    local val=${1}
+    local new_val=$(get_valid_valname $val)
+    eval echo "\$hint_${new_val}"
+}
+
+#Display Memu
+display_menu(){
+    local soft=${1}
+    local default=${2}
+    eval local arr=(\${${soft}_arr[@]})
+    local default_prompt
+    if [[ "$default" != "" ]]; then
+        if [[ "$default" == "last" ]]; then
+            default=${#arr[@]}
+        fi
+        default_prompt="(default ${arr[$default-1]})"
+    fi
+    local pick
+    local hint
+    local vname
+    local prompt="which ${soft} you'd select ${default_prompt}: "
+
+    while :
+    do
+        echo -e "\n------------ ${soft} setting ------------\n"
+        for ((i=1;i<=${#arr[@]};i++ )); do
+            vname="$(get_valid_valname ${arr[$i-1]})"
+            hint="$(get_hint $vname)"
+            [[ "$hint" == "" ]] && hint="${arr[$i-1]}"
+            echo -e "${green}${i}${plain}) $hint"
+        done
+        echo
+        read -p "${prompt}" pick
+        if [[ "$pick" == "" && "$default" != "" ]]; then
+            pick=${default}
+            break
+        fi
+
+        if ! is_digit "$pick"; then
+            prompt="Input error, please input a number"
+            continue
+        fi
+
+        if [[ "$pick" -lt 1 || "$pick" -gt ${#arr[@]} ]]; then
+            prompt="Input error, please input a number between 1 and ${#arr[@]}: "
+            continue
+        fi
+
+        break
+    done
+
+    eval ${soft}=${arr[$pick-1]}
+    vname="$(get_valid_valname ${arr[$pick-1]})"
+    hint="$(get_hint $vname)"
+    [[ "$hint" == "" ]] && hint="${arr[$pick-1]}"
+    echo -e "\nyour selection: $hint\n"
+}
+
+version_ge(){
+    test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)" == "$1"
+}
+
+get_latest_version() {
+    latest_version=($(wget -qO- https://kernel.ubuntu.com/~kernel-ppa/mainline/ | awk -F'\"v' '/v[4-9]./{print $2}' | cut -d/ -f1 | grep -v - | sort -V))
+
+    [ ${#latest_version[@]} -eq 0 ] && echo -e "${red}Error:${plain} Get latest kernel version failed." && exit 1
+
+    kernel_arr=()
+    for i in ${latest_version[@]}; do
+        if version_ge $i 4.14; then
+            kernel_arr+=($i);
+        fi
+    done
+
+    display_menu kernel last
+
+    if [[ `getconf WORD_BIT` == "32" && `getconf LONG_BIT` == "64" ]]; then
+        deb_name=$(wget -qO- https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/ | grep "linux-image" | grep "generic" | awk -F'\">' '/amd64.deb/{print $2}' | cut -d'<' -f1 | head -1)
+        deb_kernel_url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/${deb_name}"
+        deb_kernel_name="linux-image-${kernel}-amd64.deb"
+        modules_deb_name=$(wget -qO- https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/ | grep "linux-modules" | grep "generic" | awk -F'\">' '/amd64.deb/{print $2}' | cut -d'<' -f1 | head -1)
+        deb_kernel_modules_url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/${modules_deb_name}"
+        deb_kernel_modules_name="linux-modules-${kernel}-amd64.deb"
+    else
+        deb_name=$(wget -qO- https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/ | grep "linux-image" | grep "generic" | awk -F'\">' '/i386.deb/{print $2}' | cut -d'<' -f1 | head -1)
+        deb_kernel_url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/${deb_name}"
+        deb_kernel_name="linux-image-${kernel}-i386.deb"
+        modules_deb_name=$(wget -qO- https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/ | grep "linux-modules" | grep "generic" | awk -F'\">' '/i386.deb/{print $2}' | cut -d'<' -f1 | head -1)
+        deb_kernel_modules_url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${kernel}/${modules_deb_name}"
+        deb_kernel_modules_name="linux-modules-${kernel}-i386.deb"
+    fi
+
+    [ -z ${deb_name} ] && echo -e "${red}Error:${plain} Getting Linux kernel binary package name failed, maybe kernel build failed. Please choose other one and try again." && exit 1
+}
+
+get_opsy() {
+    [ -f /etc/redhat-release ] && awk '{print ($1,$3~/^[0-9]/?$3:$4)}' /etc/redhat-release && return
+    [ -f /etc/os-release ] && awk -F'[= "]' '/PRETTY_NAME/{print $3,$4,$5}' /etc/os-release && return
+    [ -f /etc/lsb-release ] && awk -F'[="]+' '/DESCRIPTION/{print $2}' /etc/lsb-release && return
+}
+
+opsy=$( get_opsy )
+arch=$( uname -m )
+lbit=$( getconf LONG_BIT )
+kern=$( uname -r )
+
+get_char() {
+    SAVEDSTTY=`stty -g`
+    stty -echo
+    stty cbreak
+   # dd if=/dev/tty bs=1 count=1 2> /dev/null
+    stty -raw
+    stty echo
+    stty $SAVEDSTTY
+}
+
+getversion() {
+    if [[ -s /etc/redhat-release ]]; then
+        grep -oE  "[0-9.]+" /etc/redhat-release
+    else
+        grep -oE  "[0-9.]+" /etc/issue
+    fi
+}
+
+centosversion() {
+    if [ x"${release}" == x"centos" ]; then
+        local code=$1
+        local version="$(getversion)"
+        local main_ver=${version%%.*}
+        if [ "$main_ver" == "$code" ]; then
+            return 0
+        else
+            return 1
+        fi
+    else
+        return 1
+    fi
+}
+
+check_bbr_status() {
+    local param=$(sysctl net.ipv4.tcp_congestion_control | awk '{print $3}')
+    if [[ x"${param}" == x"bbr" ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+check_kernel_version() {
+    local kernel_version=$(uname -r | cut -d- -f1)
+    if version_ge ${kernel_version} 4.9; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+install_elrepo() {
+
+    if centosversion 5; then
+        echo -e "${red}Error:${plain} not supported CentOS 5."
+        exit 1
+    fi
+
+    rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+
+    if centosversion 6; then
+        rpm -Uvh https://www.elrepo.org/elrepo-release-6-8.el6.elrepo.noarch.rpm
+    elif centosversion 7; then
+        rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+    fi
+
+    if [ ! -f /etc/yum.repos.d/elrepo.repo ]; then
+        echo -e "${red}Error:${plain} Install elrepo failed, please check it."
+        exit 1
+    fi
+}
+
+sysctl_config() {
+    sed -i '/net.core.default_qdisc/d' /etc/sysctl.conf
+    sed -i '/net.ipv4.tcp_congestion_control/d' /etc/sysctl.conf
+    echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf
+    echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf
+    sysctl -p >/dev/null 2>&1
+}
+
+install_config() {
+    if [[ x"${release}" == x"centos" ]]; then
+        if centosversion 6; then
+            if [ ! -f "/boot/grub/grub.conf" ]; then
+                echo -e "${red}Error:${plain} /boot/grub/grub.conf not found, please check it."
+                exit 1
+            fi
+            sed -i 's/^default=.*/default=0/g' /boot/grub/grub.conf
+        elif centosversion 7; then
+            if [ ! -f "/boot/grub2/grub.cfg" ]; then
+                echo -e "${red}Error:${plain} /boot/grub2/grub.cfg not found, please check it."
+                exit 1
+            fi
+            grub2-set-default 0
+        fi
+    elif [[ x"${release}" == x"debian" || x"${release}" == x"ubuntu" ]]; then
+        /usr/sbin/update-grub
+    fi
+}
+
+reboot_os() {
+    echo
+    echo -e "${green}Info:${plain} The system needs to reboot."
+    read -p "Do you want to restart system? [y/n]" is_reboot
+    if [[ ${is_reboot} == "y" || ${is_reboot} == "Y" ]]; then
+        reboot
+    else
+        echo -e "${red}Info:${plain} Reboot has been canceled..."
+        exit 0
+    fi
+}
+
+install_bbr() {
+    check_bbr_status
+    if [ $? -eq 0 ]; then
+        echo
+        echo -e "${green}Info:${plain} TCP BBR has already been installed. nothing to do..."
+        exit 0
+    fi
+    check_kernel_version
+    if [ $? -eq 0 ]; then
+        echo
+        echo -e "${green}Info:${plain} Your kernel version is greater than 4.9, directly setting TCP BBR..."
+        sysctl_config
+        echo -e "${green}Info:${plain} Setting TCP BBR completed..."
+        exit 0
+    fi
+
+    if [[ x"${release}" == x"centos" ]]; then
+        install_elrepo
+        [ ! "$(command -v yum-config-manager)" ] && yum install -y yum-utils > /dev/null 2>&1
+        [ x"$(yum-config-manager elrepo-kernel | grep -w enabled | awk '{print $3}')" != x"True" ] && yum-config-manager --enable elrepo-kernel > /dev/null 2>&1
+        if centosversion 6; then
+            if is_64bit; then
+                rpm_kernel_name="kernel-ml-4.18.20-1.el6.elrepo.x86_64.rpm"
+                rpm_kernel_devel_name="kernel-ml-devel-4.18.20-1.el6.elrepo.x86_64.rpm"
+                rpm_kernel_url_1="http://repos.lax.quadranet.com/elrepo/archive/kernel/el6/x86_64/RPMS/"
+            else
+                rpm_kernel_name="kernel-ml-4.18.20-1.el6.elrepo.i686.rpm"
+                rpm_kernel_devel_name="kernel-ml-devel-4.18.20-1.el6.elrepo.i686.rpm"
+                rpm_kernel_url_1="http://repos.lax.quadranet.com/elrepo/archive/kernel/el6/i386/RPMS/"
+            fi
+            rpm_kernel_url_2="https://dl.lamp.sh/files/"
+            wget -c -t3 -T60 -O ${rpm_kernel_name} ${rpm_kernel_url_1}${rpm_kernel_name}
+            if [ $? -ne 0 ]; then
+                rm -rf ${rpm_kernel_name}
+                wget -c -t3 -T60 -O ${rpm_kernel_name} ${rpm_kernel_url_2}${rpm_kernel_name}
+            fi
+            wget -c -t3 -T60 -O ${rpm_kernel_devel_name} ${rpm_kernel_url_1}${rpm_kernel_devel_name}
+            if [ $? -ne 0 ]; then
+                rm -rf ${rpm_kernel_devel_name}
+                wget -c -t3 -T60 -O ${rpm_kernel_devel_name} ${rpm_kernel_url_2}${rpm_kernel_devel_name}
+            fi
+            if [ -f "${rpm_kernel_name}" ]; then
+                rpm -ivh ${rpm_kernel_name}
+            else
+                echo -e "${red}Error:${plain} Download ${rpm_kernel_name} failed, please check it."
+                exit 1
+            fi
+            if [ -f "${rpm_kernel_devel_name}" ]; then
+                rpm -ivh ${rpm_kernel_devel_name}
+            else
+                echo -e "${red}Error:${plain} Download ${rpm_kernel_devel_name} failed, please check it."
+                exit 1
+            fi
+            rm -f ${rpm_kernel_name} ${rpm_kernel_devel_name}
+        elif centosversion 7; then
+            yum -y install kernel-ml kernel-ml-devel
+            if [ $? -ne 0 ]; then
+                echo -e "${red}Error:${plain} Install latest kernel failed, please check it."
+                exit 1
+            fi
+        fi
+    elif [[ x"${release}" == x"debian" || x"${release}" == x"ubuntu" ]]; then
+        [[ ! -e "/usr/bin/wget" ]] && apt-get -y update && apt-get -y install wget
+        echo -e "${green}Info:${plain} Getting latest kernel version..."
+        get_latest_version
+        if [ -n ${modules_deb_name} ]; then
+            wget -c -t3 -T60 -O ${deb_kernel_modules_name} ${deb_kernel_modules_url}
+            if [ $? -ne 0 ]; then
+                echo -e "${red}Error:${plain} Download ${deb_kernel_modules_name} failed, please check it."
+                exit 1
+            fi
+        fi
+        wget -c -t3 -T60 -O ${deb_kernel_name} ${deb_kernel_url}
+        if [ $? -ne 0 ]; then
+            echo -e "${red}Error:${plain} Download ${deb_kernel_name} failed, please check it."
+            exit 1
+        fi
+        [ -f ${deb_kernel_modules_name} ] && dpkg -i ${deb_kernel_modules_name}
+        dpkg -i ${deb_kernel_name}
+        rm -f ${deb_kernel_name} ${deb_kernel_modules_name}
+    else
+        echo -e "${red}Error:${plain} OS is not be supported, please change to CentOS/Debian/Ubuntu and try again."
+        exit 1
+    fi
+
+    install_config
+    sysctl_config
+    reboot_os
+}
+
+install_bbr 2>&1 | tee ${cur_dir}/install_bbr.log
