@@ -42,7 +42,7 @@ zip -rP $InputPass $NameUser.zip backup > /dev/null 2>&1
 ##############++++++++++++++++++++++++#############
 LLatest=`date`
 Get_Data () {
-git clone https://raw.githubusercontent.com/Mjoyvpn/WSS/main/root/user-backup/ &> /dev/null
+git clone https://raw.githubusercontent.com/Mjoyvpn/WSS/main/user-backup/ &> /dev/null
 }
 
 Mkdir_Data () {
